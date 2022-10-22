@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+			integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<title>Quote Generator</title>
+	</head>
+	<body class="text-2xl bg-white text-black w-screen h-screen bg-Eyes grid place-content-center">
+		<div
+			id="quote-container"
+			class="max-w-4xl p-5 rounded-lg bg-primary shadow-[0_10px_10px_10px_rgba(0,0,0,0.2)] w-11/12 mx-auto text-center"
+		>
+			<!-- Quote -->
+			<div class="m-2 xl:text-4xl">
+				<i class="fas fa-quote-left text-5xl"></i>
+				<span id="quote"></span>
+			</div>
+			<!-- Author -->
+			<div>
+				<span id="author" class="font-MontserratItalic font-bold xl:text-4xl"></span>
+			</div>
+			<!-- Loader -->
+			<div class="loader mx-auto" id="loader"></div>
+			<!-- Button -->
+			<div class="flex justify-between mt-5">
+				<button
+					id="twitter"
+					title="Twitter Thisi"
+					class="px-5 p-2 active:translate-y-1 active:drop-shadow-btnActive hover:text-twitter-color drop-shadow-btn text-white rounded-xl bg-btnColor"
+				>
+					<i class="fab fa-twitter"></i>
+				</button>
+				<button
+					id="new-quote"
+					class="p-2 px-5 text-white rounded-xl active:translate-y-1 active:drop-shadow-btnActive drop-shadow-btn hover:brightness-125 bg-btnColor"
+				>
+					New Quote
+				</button>
+			</div>
+		</div>
+		<script type="module" src="/main.js"></script>
+	</body>
+</html>
